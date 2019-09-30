@@ -24,7 +24,7 @@ setConsoleOptions({
 });
 
 // Automatically import all *.stories.ts files in @/components folder
-const req = require.context('../src/components', true, /\.stories\.ts$/);
+const req = require.context('../src/components', true, /\.stories\.(ts|mdx)$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
