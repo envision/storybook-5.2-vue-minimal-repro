@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+// Configuration and helpers
+@import "abstracts/variables";
+
+// Import Bootstrap Libraries
+@import "~bootstrap/scss/bootstrap";
+
+@import "~bootstrap-vue/src/index";

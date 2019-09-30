@@ -1,14 +1,18 @@
 {
-  "name": "storybook-mimimal-repro",
+  "name": "storybook-5.2-vue-minimal-repro",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "storybook": "start-storybook -p 6006",
     "build": "vue-cli-service build",
+    "build:storybook": "build-storybook",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.2",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
@@ -16,6 +20,13 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
+    "@storybook/addon-a11y": "^5.2.1",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-backgrounds": "^5.2.1",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-knobs": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addon-viewport": "^5.2.1",
     "@storybook/vue": "^5.2.1",
     "@types/jest": "^23.1.4",
     "@vue/cli-plugin-babel": "^3.11.0",
